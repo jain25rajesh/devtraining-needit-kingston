@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="NeedIT" max_length="40" name="x_58872_needit_needit" type="collection">
+        <element display="true" label="Name" mandatory="true" max_length="20" name="name" type="string"/>
+        <element choice="3" default="New" label="State" max_length="20" name="state" type="choice">
+            <choice>
+                <element label="New" sequence="10" value="New"/>
+                <element label="Open" sequence="20" value="Open"/>
+                <element label="Resolved" sequence="30" value="Resolved"/>
+                <element label="Closed" sequence="40" value="Closed"/>
+            </choice>
+        </element>
+        <element label="New Due Date" max_length="40" name="u_due_date_1" type="due_date"/>
+    </element>
+</database>
